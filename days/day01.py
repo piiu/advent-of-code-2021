@@ -1,4 +1,5 @@
 from utils import input
+from utils import output
 
 measurements = input.rows_to_int(input.get_input_rows())
 
@@ -12,5 +13,4 @@ for i, measurement in enumerate(measurements):
         continue
     sliding_count += measurements[i + 2] > measurements[i - 1]
 
-print('Part 1:', str(count))
-print('Part 2:', str(sliding_count))
+output.parts(count, sliding_count)

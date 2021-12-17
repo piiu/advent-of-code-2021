@@ -1,4 +1,5 @@
 from utils import input
+from utils import output
 
 commands = input.get_input_rows()
 
@@ -17,5 +18,4 @@ for command in commands:
         position += distance
         depth += aim * distance
 
-print('Part 1:', aim * position)
-print('Part 2:', depth * position)
+output.parts(aim * position, depth * position)
