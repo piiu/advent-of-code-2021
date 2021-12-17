@@ -13,3 +13,8 @@ def get_input_rows():
 
 def rows_to_int(rows):
     return [int(x) for x in rows]
+
+
+def solution(part1, part2):
+    print('Part 1:', str(part1))
+    print('Part 2:', str(part2))

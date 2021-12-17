@@ -1,7 +1,6 @@
-from utils import input
-from utils import output
+from utils import io
 
-commands = input.get_input_rows()
+commands = io.get_input_rows()
 
 depth = 0
 position = 0
@@ -18,4 +17,4 @@ for command in commands:
         position += distance
         depth += aim * distance
 
-output.parts(aim * position, depth * position)
+io.solution(aim * position, depth * position)

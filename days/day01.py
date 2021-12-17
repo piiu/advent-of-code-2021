@@ -1,7 +1,6 @@
-from utils import input
-from utils import output
+from utils import io
 
-measurements = input.rows_to_int(input.get_input_rows())
+measurements = io.rows_to_int(io.get_input_rows())
 
 count = 0
 sliding_count = 0
@@ -13,4 +12,4 @@ for i, measurement in enumerate(measurements):
         continue
     sliding_count += measurements[i + 2] > measurements[i - 1]
 
-output.parts(count, sliding_count)
+io.solution(count, sliding_count)
