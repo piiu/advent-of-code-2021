@@ -1,13 +1,12 @@
-from utils import io
+from utils import output
+from utils.input import Input
 
-commands = io.get_input_rows()
+commands = Input().rows_to_words()
 
-depth = 0
-position = 0
-aim = 0  # aka depth dor part1
+depth = position = aim = 0
 
 for command in commands:
-    direction, distance = command.split(' ')
+    direction, distance = command
     distance = int(distance)
     if direction == 'up':
         aim -= distance
@@ -17,4 +16,4 @@ for command in commands:
         position += distance
         depth += aim * distance
 
-io.solution(aim * position, depth * position)
+output.solution(aim * position, depth * position)
