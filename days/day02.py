@@ -1,7 +1,7 @@
 from utils import output
 from utils.input import Input
 
-commands = Input().rows_to_words()
+commands = Input().rows_of_words()
 
 depth = position = aim = 0
 

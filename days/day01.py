@@ -1,7 +1,7 @@
 from utils import output
 from utils.input import Input
 
-measurements = Input().rows_to_int()
+measurements = Input().rows_of_numbers()
 
 count = sliding_count = 0
 

@@ -2,7 +2,7 @@ from statistics import multimode
 from utils import output, binary
 from utils.input import Input
 
-report = Input().rows_to_list()
+report = Input().rows_of_letters()
 
 
 def get_most_common_in_position(list_rows, position, fallback='1'):
