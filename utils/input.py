@@ -18,8 +18,11 @@ class Input:
     def rows_of_letters(self):
         return [list(x) for x in self.rows]
 
-    def rows_of_words(self):
-        return [x.split() for x in self.rows]
+    def rows_of_words(self, separator=None):
+        return [x.split(separator) for x in self.rows]
+
+    def list_of_numbers(self, separator=','):
+        return [int(x) for x in self.rows[0].split(separator)]
 
     def blocks_of_maps(self):
         return [Map().import_raw(x) for x in self.raw.split('\n\n')]

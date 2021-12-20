@@ -5,7 +5,7 @@ puzzle_input = Input()
 numbers = puzzle_input.extract_first_row().split(',')
 boards = puzzle_input.blocks_of_maps()
 
-winning_board = winning_number = losing_board = None
+winning_board = winning_number = None
 for number in numbers:
     everyone_won = False
     for board in boards:
