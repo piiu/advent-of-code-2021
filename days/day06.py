@@ -14,4 +14,4 @@ def solve(after_days):
     return sum([get_number_of_children(after_days, x) for x in timers])
 
 
-output.solution(solve(80))
+output.solution(solve(80), solve(256))
